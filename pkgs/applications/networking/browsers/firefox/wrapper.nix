@@ -71,7 +71,7 @@ let
             [pkg]
           else [];
 
-      allNativeMessagingHosts = builtins.map lib.getBin (
+      allNativeMessagingHosts = builtins.map lib.getLib (
         nativeMessagingHosts
           ++ deprecatedNativeMessagingHost "enableBrowserpass" browserpass
           ++ deprecatedNativeMessagingHost "enableBukubrow" bukubrow
